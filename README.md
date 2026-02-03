@@ -1,6 +1,6 @@
 # DL-TrashNet 🗑️♻️
 
-A deep learning project for waste classification using the TrashNet dataset with various data augmentation techniques and ResNet-50 architecture.
+A deep learning project for waste classification using the three datasets with various data augmentation techniques and ResNet-50 architecture.
 
 ## 📖 About
 
@@ -32,7 +32,7 @@ To overcome the limitations of small-scale datasets, this project utilizes a **U
 
 **Transfer Learning Strategy:**
 - Use ImageNet pretrained ResNet-50 weights
-- Replace final FC layer for 6-class classification
+- Replace final FC layer for 5-class classification
 - Add dropout (0.5) for regularization
 - Train with Adam optimizer and learning rate scheduling
 
@@ -42,7 +42,7 @@ To overcome the limitations of small-scale datasets, this project utilizes a **U
 - Augmentation only on training data
 
 **Early Stopping:**
-- Monitor validation loss with patience=5
+- Monitor validation loss with patience=4
 - Save best model based on validation accuracy
   
 ## 🏗️ Project Structure
@@ -51,14 +51,8 @@ To overcome the limitations of small-scale datasets, this project utilizes a **U
 DL-TrashNet/
 ├── notebooks/
 │   ├── 01_baseline_resnet.ipynb          # Baseline model (basic preprocessing)
-│   └── 02_augmented_resnet.ipynb         # Augmented model (advanced techniques)
-├── dataset-resized/                      # Raw dataset
-│   ├── cardboard/
-│   ├── glass/
-│   ├── metal/
-│   ├── paper/
-│   ├── plastic/
-│   └── trash/
+│   ├── 02_augmented_resnet.ipynb         # Augmented model (advanced techniques)
+│   └── 03_cutmix_resnet.ipynb            # Augmented model with cutmix
 ├── plots/                                # Training curves & visualizations
 ├── results/                              # Model metrics & statistics
 └── README.md
