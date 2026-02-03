@@ -1,0 +1,15 @@
+{
+  "model": "ResNet50",
+  "experiment": "With Data Augmentation",
+  "num_epochs_trained": 25,
+  "best_val_accuracy": 97.0863309352518,
+  "test_accuracy": 97.33908665947502,
+  "augmentations": [
+    "RandomCrop(224)",
+    "RandomHorizontalFlip(p=0.5)",
+    "RandomRotation(15)",
+    "ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1)",
+    "RandomAffine(translate=0.1, scale=0.9-1.1)",
+    "Normalize(ImageNet)"
+  ]
+}
