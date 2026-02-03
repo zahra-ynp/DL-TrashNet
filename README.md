@@ -8,17 +8,25 @@ This project implements an intelligent trash classification system using convolu
 
 ## 📊 Dataset
 
-This project uses the [TrashNet Dataset](https://www.kaggle.com/datasets/feyzazkefe/trashnet) from Kaggle.
+To overcome the limitations of small-scale datasets, this project utilizes a **Unified Dataset** constructed by merging three distinct open-source repositories. This combination creates a robust, diverse dataset of approximately **14,000 images**, ensuring better generalization and minimizing overfitting.
 
-**Classes (6 categories):**
-- 🟫 Cardboard
-- 🔵 Glass
-- ⚙️ Metal
-- 📄 Paper
-- 🟣 Plastic
-- 🗑️ Trash
+**Data Sources:**
+1. [TrashNet](https://www.kaggle.com/datasets/feyzazkefe/trashnet)
+2. [Garbage Classification](https://www.kaggle.com/datasets/mostafaabla/garbage-classification)
+3. [Garbage Classification V2](https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2?resource=download)
 
-**Dataset Size:** 2,527 images (70% train, 15% val, 15% test)
+| **Final Class**
+| 🟫 Cardboard
+| 🔵 Glass
+| ⚙️ Metal
+| 📄 Paper
+| 🟣 Plastic
+
+### 📊 Final Split Strategy
+
+- **Training:** 70%
+- **Validation:** 15%
+- **Testing:** 15%
 
 ## 📝 Implementation Details
 
