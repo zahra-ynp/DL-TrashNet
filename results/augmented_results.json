@@ -1,0 +1,14 @@
+{
+  "model": "ResNet34",
+  "experiment": "With Data Augmentation",
+  "num_epochs_trained": 15,
+  "best_val_accuracy": 96.36690647482014,
+  "test_accuracy": 96.58396260338007,
+  "augmentations": [
+    "RandomHorizontalFlip(p=0.5)",
+    "RandomRotation(15)",
+    "ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1)",
+    "RandomAffine(translate=0.1, scale=0.9-1.1)",
+    "Normalize(ImageNet)"
+  ]
+}
